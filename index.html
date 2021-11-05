@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gammers</title>
+   <link rel="shorcut icon" type="image/x-icon" href="img/logo2.ico">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scrip/dat.gui.min.js"></script>
+</head>
+<body>
+
+
+    </div>
+
+    <div class="menu-btn">
+        <i class="fas fa-align-justify"></i>
+    </div>
+<section class="titulo ">
+    <div class="side-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+       <div class="menu">
+           <div class="item"><a href="#"> <i class="fas fa-home"></i>Inicio</a></div>
+           <div class="item">
+               <a class="sub-btn"> <i class="far fa-newspaper"></i> Noticias <i class="fas fa-angle-right juan"></i></a>
+              <div class="sub-menu">
+                  <a href="index-noticias.html" class="sun.item">Juegos</a>
+                  <a href="index-jugadores.html" class="sun.item">Influencers</a>
+                  <!-- <a href="#" class="sun.item">sub item 3</a> -->
+
+              </div>
+            </div>
+           <div class="item"><a href="index-quien.html"> <i class="fab fa-angellist"></i>¿Quienes Somos?</a></div>
+           <div class="item">
+               <a class="sub-btn"> <i class="fas fa-futbol"></i>E-Sports <i class="fas fa-angle-right juan"></i></a>
+               <div class="sub-menu">
+                <a href="index-e-sports.html" class="sun.item">Juegos</a>
+                <a href="index-jugadores.html" class="sun.item"></a>
+                <a href="#" class="sun.item"></a>
+
+            </div>
+            <div>
+                <!-- <div class="item"><a href="#"> <i class="fas fa-futbol"></i>Juego</a></div> -->
+            </div>
+            </div>
+           <!-- <div class="item"><a href="#"> <i class="fas fa-shopping-cart"></i>tienda</a></div> -->
+
+       </div>
+
+    </div>
+
+
+    <section class="julian">
+
+  <img src="img/vegeta.png" height="400px" width="350px" alt="">
+
+
+    </section>
+
+     <!-- <h1>Welcome </h1> -->
+     <!-- <section class="titulos">
+
+
+    <h2>Gammers</h2>
+     <h5>pagina para que investigues todo sobre video juegos :)</h5> -->
+       <!-- </section> --> 
+ </section>
+
+ <script>
+
+     $("document").ready(function(){
+        // para alternar el  sub menus
+        $('.sub-btn').click(function(){
+            $(this).next('.sub-menu').slideToggle();
+            $(this).find('.juan').toggleClass('rotate');
+        })
+
+        // expandir y contraer el menu slidebar
+        $('.menu-btn').click(function(){
+            $('.side-bar').addClass('active');
+
+        })
+
+        $('.close-btn').click(function(){
+            $('.side-bar').removeClass('active');
+
+        })
+     })
+
+
+
+
+         window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+         ga('create', 'UA-105392568-1', 'auto');
+         ga('send', 'pageview');
+
+
+    </script>
+ <canvas></canvas>
+
+ <script src="scrip/script.js"></script>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body{
+    background-color: hsla(0, 0%, 0%, 0.959);
+}
+
+canvas{
+  
+    width: 100%;
+    height: 100%;
+ 
+}
+.dg.ac{
+    display: none;
+
+}
+
+body{
+    min-height: 100vh;
+    /* background: url(img/fondo1.jpg); */
+    background-size: cover;
+    background-position: center;
+
+}
+
+.side-bar{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.2s ease;
+    transition-property: left;
+   
+}
+.side-bar.active{
+    left: 0;
+   
+}
+
+.side-bar .menu{
+    width: 100%;
+    margin-top: 80px;
+
+}
+
+.side-bar .menu .item{
+    position: relative;
+    cursor: pointer;
+
+}
+
+.side-bar .menu .item a{
+    color: #fff;
+    /* background: #8621f8; */
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+
+.side-bar .menu .item a:hover{
+    background: #8621f8;
+
+}
+.side-bar .menu .item i{
+    margin-right: 15px;
+
+}
+
+
+.side-bar .menu .item a .juan{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu{
+    background: rgba(255, 255, 255, 0.1);
+    display: none;
+}
+
+.side-bar .menu .item .sub-menu a{
+    padding-left: 80px;
+}
+
+.rotate{
+    transform: rotate(90deg);
+
+}
+.close-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+
+}
+
+.menu-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    margin: 25px;
+    cursor: pointer;
+}
+
+/* .riapira{
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center; */
+
+
+
+/* .titulo{
+  
+   position: fixed;
+   align-items: center;
+   justify-content: center;
+   margin-left: 900px;
+   margin-top: 400px;
+   
+}
+
+.titulo h1{
+    font-size: 50px;
+    color: blanchedalmond;
+    text-transform: uppercase;
+   align-items: center;
+   justify-content: center;
+}
+
+.titulos h2{
+    font-size: 70px;
+    color: rgb(31, 175, 194);
+   align-items: center;
+  justify-content: center;
+}
+
+.titulos h5{
+    color: rgb(241, 241, 241);
+    
+}
+ */
+.julian{
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    margin-left: 800px;
+    margin-top: 200px;
+
+}
